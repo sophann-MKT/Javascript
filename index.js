@@ -460,7 +460,7 @@ const func = ({ name, gender, age }) => {
 console.log(func(dog));
 
 const func2 = (animal) => {
-  const { name, age } = animal;
-  return `${name} is ${age} years old.`;
-};
-console.log(func2(dog));
+  const {name, age} = animal;
+  return `${name} is ${age} years old.`
+}
+console.log(func2(dog))
