@@ -448,19 +448,57 @@
 
 // 7. obj destructuring
 
-const dog = {
-  name: "Nala",
-  gender: "female",
-  age: 10,
-};
+// const dog = {
+//   name: "Nala",
+//   gender: "female",
+//   age: 10,
+// };
 
-const func = ({ name, gender, age }) => {
-  return `${name} is ${age} years old and is a ${gender} dog.`;
-};
-console.log(func(dog));
+// const func = ({ name, gender, age }) => {
+//   return `${name} is ${age} years old and is a ${gender} dog.`;
+// };
+// console.log(func(dog));
 
-const func2 = (animal) => {
-  const {name, age} = animal;
-  return `${name} is ${age} years old.`
-}
-console.log(func2(dog))
+// const func2 = (animal) => {
+//   const {name, age} = animal;
+//   return `${name} is ${age} years old.`
+// }
+// console.log(func2(dog))
+
+// 8. use Reduce() map() and filter() instead of regular for loops
+
+// let orders = [1, 2, 3, 4, 5];
+
+// const total = orders.reduce((acc, cur) => {
+//   return acc + cur;
+// });
+// console.log(total);
+
+// const total2 = orders.map((item) => {
+//   return item * 2;
+// });
+// console.log(total2);
+
+// js es6
+// let and const keyword
+
+// let x = 2;
+// let x = 5;
+// // console.log(x);
+// const num = 4;
+// console.log(num);
+
+// arrow function
+
+// const multiPly = (x, y) => x * y;
+// console.log(multiPly(5, 2));
+
+// the spread operator
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+console.table(year);
